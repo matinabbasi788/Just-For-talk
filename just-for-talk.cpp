@@ -8,9 +8,40 @@
 
 using namespace std;
 
+void start_hello_answer_speak();
 
 
 int main(){
+	system("cls");
+	cout << "WelCome\n\n";
+	string status;
+	command_line:
+	cin >> status;
+	if (status == "Hello" || status == "hello" || status == "HELLO" || status == "hi" ||status == "Hi" || status == "HI")
+	{
+		start_hello_answer_speak();
+		cout << endl;
+		goto command_line;
+	}
+	
+
+	else if (status == "help" || status == "Help" || status == "HELP")
+	{
+		cout << "hello : new conversiton\n";
+		goto command_line;
+	}
+
+	else
+	{
+		cout << "Try Agian \"Help\" \n";
+		goto command_line;
+	}
+	
+	return 0;
+}
+
+void start_hello_answer_speak()
+{
 	srand (time(NULL));
 
 	cout << "Hello\n\n\nMy name is MatinAbbasi\nWhats Your name: ";
@@ -18,7 +49,7 @@ int main(){
 	cin >> answer_name;
 	cout << "\nNice to meet you " << answer_name << endl << endl;
 	string answer_can_speak_english;
-	cout << "Can you Speak English :: (Yes) (No) : ";
+	cout << "Can you Speak English ? (Yes) (No) : ";
 	try_again_answer:
 	cin >> answer_can_speak_english ;
 	if(answer_can_speak_english == "No" || answer_can_speak_english == "no" || answer_can_speak_english == "n" || answer_can_speak_english == "N")
@@ -42,6 +73,15 @@ int main(){
 		default:
 			break;
 		}
+		cout << "\nDo you like to learn English ? (Yes) (No) :";
+		string like_learning_english;
+		cin >> like_learning_english;
+		if(like_learning_english == "No" || like_learning_english == "no" || like_learning_english == "n" || like_learning_english == "N")
+		{
+			cout << "\nOk i'm coming back\n\nI listened. If you want help, just say \"help\"";
+		}
+
+		
 
 	}
 	else if (answer_can_speak_english == "Yes" || answer_can_speak_english == "yes" || answer_can_speak_english == "y" || answer_can_speak_english == "Y")
@@ -73,9 +113,4 @@ int main(){
 		goto try_again_answer;
 	}
 	
-	
-	
-
-	return 0;
 }
-
