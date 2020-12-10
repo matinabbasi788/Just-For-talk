@@ -1,0 +1,9 @@
+HELLO
+
+This is a very simple project in C++ language
+It is also a part-time project that you can pursue and face challenges.
+This file that you have both programming problems can be written better
+
+What is to be done?
+is to write a program that can be talked to in such a way that it can do a simple greeting and provide the user with a random word by defining that word.
+You can add other features Do. good luck
