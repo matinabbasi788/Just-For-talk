@@ -14,4 +14,4 @@ The interesting thing about this is that everyone uses the words and texts they 
 programing talk english
 ----------------------
 
-** Just For Talk || Just For Fun **
+**Just For Talk || Just For Fun**
